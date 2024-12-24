@@ -3,5 +3,86 @@
     padding: 0px;
 }
 
+body{
+    /* min-height: 100vh;
+    height: auto; */
+
+    /* height: 100vh; */
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+    padding: 20px;
+    color: blue;
+   }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    margin: 70px 0px;
+    padding: 70px;
+    font-size: 23px;
+    width: 40%;
+    margin: 100px;
+    border-radius: 20px;
+  
+}
+
+.list{
+    display: flex;  
+    flex-direction: column;
+    margin-bottom: 17px;
+}
+
+.list input{
+    border: none;
+    outline: none;
+    padding: 10px; 
+    font-size: 17px;
+}
+
+
+
+.gender{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+button{
+    padding: 14px;
+    font-size: 19px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: fit-content;
+    margin: auto;
+}
+
+.a1{
+    margin-top: 15px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+.a1 a{
+    text-decoration: none;
+    font-size: 30px;
+    color:rgb(20, 20, 20);
+    margin-right: 50px;
+
+}
+
+label{
+ margin-bottom: 5px;
+}
 
 
