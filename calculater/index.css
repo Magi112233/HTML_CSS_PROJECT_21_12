@@ -1,0 +1,59 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center ;
+   align-items: center;
+   background-color: pink;
+   height:100vh;
+   /* overflow: hidden; */
+     
+}
+
+
+#outer-div{
+    background-color:#262729;
+    padding: 12px;
+    max-width: 350px;
+    width: 210px;
+    border-radius: 4px;
+
+    
+}
+
+#s1 input{
+    width: 97%;
+    padding: 5px;
+    font-size: 28px;
+    outline: none;
+    border: none;
+}
+
+
+
+#s2 div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+
+}
+
+div button{
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    font-size: 19px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
