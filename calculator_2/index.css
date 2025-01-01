@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(179, 174, 166);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+ #outer_div{
+    background-color: #111022;
+    padding: 18px;
+   width: 300px;
+   border-radius: 9px;
+ }
+#s1 input{
+    height: 40px;
+    width: 95%;
+    padding: 8px;
+    font-size: 28px;
+    outline: none;
+    border: none;
+}
+#s2 div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+div button{
+    cursor: pointer;
+    padding: 10px;
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+    
+     

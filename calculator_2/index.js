@@ -3,21 +3,19 @@ const seven = document.getElementById("7");
 const eight = document.getElementById("8");
 const nine = document.getElementById("9");
 const four = document.getElementById("4");
-const five = document.getElementById("5");
+const five = document.ElementById("5");
 const six = document.getElementById("6");
 const one = document.getElementById("1");
-const two = document.getElementById("2");
+const twwo = document.getElementById("2");
 const three = document.getElementById("3");
 const zero = document.getElementById("0");
 const double_zero = document.getElementById("00");
-
-const eqaul = document.getElementById("=");
 const add = document.getElementById("+");
 const sub = document.getElementById("-");
 const mul = document.getElementById("*");
 const div = document.getElementById("/");
+const equal = document.getElementById("=");
 
-// to validate typing input
 function checkValid(i) {
   if (/[^0-9+\-*/().]/.test(i)) {
     return false;
@@ -26,80 +24,71 @@ function checkValid(i) {
 }
 
 document.getElementById("magi").addEventListener("input", function (e) {
-  const val = e.target.value; // syntax
+  const val = e.target.value;
   const check = checkValid(val);
-  //   console.log("check", check);
-
   if (!check) {
     console.log(e.target.value.slice(0, -1));
-    e.target.value = e.target.value.slice(0, -1); // removes the last char
+    e.target.value = e.target.value.slice(0, -1);
   }
+});
+
+eight.addEventListener("click", function () {
+  input.value += eight.innerText;
 });
 
 seven.addEventListener("click", function () {
   input.value += seven.innerText;
 });
 
-eight.addEventListener("click", () => {
-  document.getElementById("magi").value += eight.innerHTML;
+nine.addEventListener("click", () => {
+  input.value += nine.innerText;
 });
 
-nine.addEventListener("click", ninefun);
-
-function ninefun() {
-  input.value += nine.innerText;
-}
-
-four.addEventListener("click", function () {
+four.addEventListener("click", () => {
   input.value += four.innerText;
 });
 
-five.addEventListener("click", function () {
+five.addEventListener("click", fivefun());
+function fivefun() {
   input.value += five.innerHTML;
-});
+}
 
-six.addEventListener("click", () => {
-  input.value += six.innerHTML;
-});
+six.addEventListener("click", sixfun());
+function sixfun() {
+  input.value += six.innerText;
+}
 
-one.addEventListener("click", function () {
+one.addEventListener("click", () => {
   input.value += one.innerText;
 });
 
 two.addEventListener("click", function () {
-  input.value += two.innerHTML;
+  input.value += two.innerText;
 });
 
-three.addEventListener("click", function () {
+three.addEventListener("click", () => {
   input.value += three.innerText;
 });
 
 zero.addEventListener("click", () => {
-  //   input.value += zero.innerText;
-  document.getElementById("input").value =
-    document.getElementById("0").innerHTML;
+  input.value += zero.innerText;
 });
 
 double_zero.addEventListener("click", () => {
   input.value += double_zero.innerText;
 });
 
-add.addEventListener("click", () => {
-  input.value += add.innerText;
+add.addEventListener("click", function () {
+  input.value += add.inner.HTML;
 });
 
 sub.addEventListener("click", function () {
   input.value += sub.innerText;
 });
 
-mul.addEventListener("click", () => {
-  input.value += mul.innerHTML;
+div.addEventListener("click", () => {
+  input.value += div.innerHTML;
 });
-
-div.addEventListener("click", divfun);
-function divfun() {
-  input.value += div.innerText;
-}
 
 eqaul.addEventListener("click", () => {
   let val = input.value;
