@@ -3,10 +3,10 @@ const seven = document.getElementById("7");
 const eight = document.getElementById("8");
 const nine = document.getElementById("9");
 const four = document.getElementById("4");
-const five = document.ElementById("5");
+const five = document.getElementById("5");
 const six = document.getElementById("6");
 const one = document.getElementById("1");
-const twwo = document.getElementById("2");
+const two = document.getElementById("2");
 const three = document.getElementById("3");
 const zero = document.getElementById("0");
 const double_zero = document.getElementById("00");
@@ -14,7 +14,7 @@ const add = document.getElementById("+");
 const sub = document.getElementById("-");
 const mul = document.getElementById("*");
 const div = document.getElementById("/");
-const equal = document.getElementById("=");
+const eqaul = document.getElementById("=");
 
 function checkValid(i) {
   if (/[^0-9+\-*/().]/.test(i)) {
@@ -48,15 +48,13 @@ four.addEventListener("click", () => {
   input.value += four.innerText;
 });
 
-five.addEventListener("click", fivefun());
-function fivefun() {
+five.addEventListener("click", function () {
   input.value += five.innerHTML;
-}
+});
 
-six.addEventListener("click", sixfun());
-function sixfun() {
+six.addEventListener("click", function () {
   input.value += six.innerText;
-}
+});
 
 one.addEventListener("click", () => {
   input.value += one.innerText;
@@ -79,11 +77,15 @@ double_zero.addEventListener("click", () => {
 });
 
 add.addEventListener("click", function () {
-  input.value += add.inner.HTML;
+  input.value += add.innerHTML;
 });
 
 sub.addEventListener("click", function () {
   input.value += sub.innerText;
+});
+
+mul.addEventListener("click", function () {
+  input.value += mul.innerHTML;
 });
 
 div.addEventListener("click", () => {

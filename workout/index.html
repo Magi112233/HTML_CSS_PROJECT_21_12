@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        value A : <input id="a" >
+        value B : <input id="b">  <br>
+
+        <p>hello</p>
+
+
+        <label id="label" style="color: red; font-size: 20px; font-weight: bold; margin-left: 40px;"> </label>
+        <button  onclick="Add()">ADD</button><br>
+
+        <label id="label2"></label>
+        <button  onclick="sub()">SUB</button><br>
+
+        <label id="label3"></label>
+        <button  onclick="mul()">MUL</button><br>
+
+        <label id="label4"></label>
+        <button  onclick="div()">DIV</button><br>
+
+        <button 
+          onclick="clearInput()"> Clear</button><br>
+
+          <br>
+
+</body>
+
+<script>
+   
+
+function Add(){
+  const B = +document.getElementById('b').value;
+  let A = +document.getElementById('a').value ;
+//   console.log(B + A)
+document.getElementById('label').innerText = A + B
+
+}
+
+function sub(){
+  const B = +document.getElementById('b').value;
+  let A = +document.getElementById('a').value ;
+//   console.log(B + A)
+document.getElementById('label2').innerText = A - B
+
+}
+
+function mul(){
+  const B = +document.getElementById('b').value;
+  let A = +document.getElementById('a').value ;
+//   console.log(B + A)
+document.getElementById('label3').innerText = A * B
+
+}
+
+function div(){
+  const B = +document.getElementById('b').value;
+  let A = +document.getElementById('a').value ;
+//   console.log(B + A)
+document.getElementById('label4').innerText = A / B
+document.getElementById('a').value = '' ;
+    // document.getElementById('a').value = '' ;
+}  
+
+function clearInput(){
+
+    document.getElementById('a').value  = '' ;
+    document.getElementById('b').value = '' ;
+    document.getElementById('label').innerHTML='';
+    document.getElementById('label2').innerText = '' ;
+    document.getElementById('label3').innerHTML='';
+    document.getElementById('label4').innerText='';
+   
+}
+
+
+
+
+
+</script>
+</html>

@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(179, 174, 166);
+    background-color: rgb(15, 241, 223);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,9 +30,11 @@ body{
     justify-content:space-between;
     align-items: center;
     margin-top: 10px;
+    
 }
 div button{
     cursor: pointer;
+       
     padding: 10px;
     font-size: 25px;
     height: 60px;

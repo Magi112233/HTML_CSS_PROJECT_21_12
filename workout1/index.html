@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    value A:
+    <input id="a">
+
+    value B:
+    <input id="b">
+    <br><br>
+
+    <label id="lab1">value</label>
+    <button onclick="add()">ADD</button><br>
+
+    <label id="lab2">value</label>
+    <button onclick="sub()">SUB</button><br>
+
+    <label id="lab3">value</label>
+    <button onclick="mul()">Mul</button><br>
+
+    <label id="lab4">value</label>
+    <button onclick="div()">Div</button>
+
+    <button onclick="btn()">clear</button><br>
+
+    <button  onclick="btn1()">Red</button><br>
+
+    <button onclick="btn2()">green</button><br>
+
+    <button onclick="btn3()">blue</button>
+
+
+    
+    
+</body>
+
+<script>
+    function add(){
+        A =+document.getElementById('a').value;
+        B =+document.getElementById('b').value;
+        document.getElementById('lab1').innerHTML=A+B;
+        // document.getElementById('lab1').style.color='red';
+
+    }
+
+    function sub(){
+        A =+document.getElementById('a').value;
+        B =+document.getElementById('b').value;
+        document.getElementById('lab2').innerText=A-B;
+        // document.getElementById('lab2').style.color='red';
+    }
+
+    function mul(){
+        A =+document.getElementById('a').value;
+        B =+document.getElementById('b').value;
+        document.getElementById('lab3').innerHTML=A*B;
+        // document.getElementById('lab3').style.color='red';
+        }
+
+    function div(){
+        A =+document.getElementById('a').value;
+        B =+document.getElementById('b').value;
+        document.getElementById('lab4').innerHTML=A/B;
+        // document.getElementById('lab4').style.color='red';
+    }
+    function btn(){
+        document.getElementById('a').value='';
+        document.getElementById('b').value='';
+        document.getElementById('lab1').innerHTML='';
+        document.getElementById('lab2').innerHTML='';
+        document.getElementById('lab3').innerHTML='';
+        document.getElementById('lab4').innerHTML='';
+    }
+
+    function btn1(){
+        document.getElementById('lab1').style.color='red';
+        document.getElementById('lab2').style.color='red';
+        document.getElementById('lab3').style.color='red';
+        document.getElementById('lab4').style.color='red';
+    }
+    function btn2(){
+        document.getElementById('lab1').style.color='green';
+        document.getElementById('lab2').style.color='green';
+        document.getElementById('lab3').style.color='green';
+        document.getElementById('lab4').style.color='green';
+    }
+    function btn3(){
+        document.getElementById('lab1').style.color='blue';
+        document.getElementById('lab2').style.color='blue';
+        document.getElementById('lab3').style.color='blue';
+        document.getElementById('lab4').style.color='blue';
+    }
+
+   
+
+</script>
+
+</html>
