@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  valueA:<input id="a">
+  valueB:<input id="b"> <br>
+  <label id="lab1">ADD</label>
+  <input type="radio" onclick="r1()" id="add" ><br>
+
+  <label id="lab2">SUB</label>
+  <input type="radio" onclick="r2()" ><br>
+
+  <label id="lab3">MUL</label>
+  <input type="radio" onclick="r3()" ><br>
+
+  <label id="lab4">DIV</label>
+  <input type="radio" onclick="r4()">
+
+  <button onclick="btn1()" id="on">Enter</button>
+  <input id="int">
+ 
+</body>
+<script>
+          function r1() {
+        const A = +document.getElementById("a").value; 
+        const B = +document.getElementById("b").value; 
+         document.getElementById("int").value = A + B; 
+         
+        }
+        function r2(){
+         const A =+document.getElementById('a').value;
+         const B =+document.getElementById('b').value;
+         document.getElementById('int').value =A-B;
+        }
+
+        function r3(){
+        const A =+document.getElementById('a').value;
+        const B =+document.getElementById('b').value;
+        document.getElementById('int').value = A*B;
+        }
+
+        function r4(){
+        const A =+document.getElementById('a').value;
+        const B =+document.getElementById('b').value;
+        document.getElementById('int').value=A/B;
+        }
+
+        function btn1() {
+      const input = document.getElementById("int").value; 
+    //   alert("You entered: " + input); 
+    }
+   
+   
+   
+</script>
+</html>
