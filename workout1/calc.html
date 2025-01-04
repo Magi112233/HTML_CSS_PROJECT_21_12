@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="calc.css"
 </head>
 <body>
-    
-  valueA:<input id="a">
-  valueB:<input id="b"> <br>
-  <label id="lab1">ADD</label>
-  <input type="radio" onclick="r1()" id="add" ><br>
+    <div id="first_div">
+        <marquee direction="lefts"  >
+            <h2>CALCULATOR</h2>
+        </marquee>
+        
+        Value A:<input id="a"><br>
+        Value B:<input id="b"> <br>
 
-  <label id="lab2">SUB</label>
-  <input type="radio" onclick="r2()" ><br>
-
-  <label id="lab3">MUL</label>
-  <input type="radio" onclick="r3()" ><br>
-
-  <label id="lab4">DIV</label>
-  <input type="radio" onclick="r4()">
-
-  <button onclick="btn1()" id="on">Enter</button>
-  <input id="int">
- 
+        <div id="second_div">
+            <label id="lab1">ADD</label>
+            <input type="radio" onclick="r1()" id="add" ><br>
+          
+            <label id="lab2">SUB</label>
+            <input type="radio" onclick="r2()" ><br>
+          
+            <label id="lab3">MUL</label>
+            <input type="radio" onclick="r3()" ><br>
+          
+            <label id="lab4">DIV</label>
+            <input type="radio" onclick="r4()"><br><br>
+                     
+        </div>
+        <div id="third_div">
+            <input id="int">
+        </div>
+        
+    </div>
 </body>
-<script>
+<script> 
           function r1() {
         const A = +document.getElementById("a").value; 
         const B = +document.getElementById("b").value; 
@@ -48,12 +58,9 @@
         const A =+document.getElementById('a').value;
         const B =+document.getElementById('b').value;
         document.getElementById('int').value=A/B;
-        }
+        } 
 
-        function btn1() {
-      const input = document.getElementById("int").value; 
-    //   alert("You entered: " + input); 
-    }
+     
    
    
    
