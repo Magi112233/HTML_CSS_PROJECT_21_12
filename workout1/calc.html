@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="first_div">
-        <marquee direction="lefts"  >
+        <marquee direction="lefts">
             <h2>CALCULATOR</h2>
         </marquee>
         
@@ -16,17 +16,17 @@
         Value B:<input id="b"> <br>
 
         <div id="second_div">
-            <label id="lab1">ADD</label>
-            <input type="radio" onclick="r1()" id="add" ><br>
+            <label id="lab1"  for="add">ADD</label>
+            <input type="radio" onclick="r1()" id="add"  name="calc"><br>
           
-            <label id="lab2">SUB</label>
-            <input type="radio" onclick="r2()" ><br>
+            <label id="lab2" for="sub">SUB</label>
+            <input type="radio" onclick="r2()" id="sub" name="calc" ><br>
           
-            <label id="lab3">MUL</label>
-            <input type="radio" onclick="r3()" ><br>
+            <label id="lab3" for="mul">MUL</label>
+            <input type="radio" onclick="r3()"  id="mul" name="calc"><br>
           
-            <label id="lab4">DIV</label>
-            <input type="radio" onclick="r4()"><br><br>
+            <label id="lab4" for="div">DIV</label>
+            <input type="radio" id="div" onclick="r4() " name="calc"><br><br>
                      
         </div>
         <div id="third_div">

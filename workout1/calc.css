@@ -38,3 +38,7 @@ h2{
     border-radius: 3px;
     padding: 4px;
 }
+
+label{
+    cursor: pointer;
+}
