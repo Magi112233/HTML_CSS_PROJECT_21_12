@@ -3,11 +3,19 @@ body{
     width: 100%;
     display: flex;
     gap:  20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .first-div{
-    background-color: rgb(134, 108, 184);
+    background-color: burlywood;
     width: 50%;
     height: 100vh;
+    padding: 20px;
+    
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
 
 .second-div{
@@ -15,5 +23,27 @@ body{
     width: 50%;
     height: 100vh;
 }
+input{
+    display: flex;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+label{
+    font-size: 25px;
+    cursor: pointer;
+   }
 
+h2{
+    text-align: center;
+    font-size:40px ;
+    color: blue;
+}
+
+
+    
+    
 
