@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="first-div">
+        <h2>CALC</h2>
+        <label>ValueA:</label>
+        <input id="a">
+        <label>ValueB:</label>
+        <input id="b">
+
+        <div class="part1">
+            <label for="add" >ADD</label>
+            <input type="radio" onclick="a1()" id="add"  name="calc">
+            <label for="sub">SUB </label>
+            <input type="radio" onclick="s1()" id="sub" name="calc">
+            <label for="mul"  >MUL</label>
+            <input type="radio"onclick="m1()" id="mul" name="calc">
+            <label for="div" >DIV</label>
+            <input type="radio" onclick="d1()" id="div" name="calc"><br>
+
+            <input id="int">
+        </div>
+    </div>
+<!-- //----------------------------------------------------------- -->
+    <div class="second-div">
+        <h3>CALCULATOR</h3>
+        
+
+    </div>
+</body>
+<!-- <script src="index.js"></script> -->
+<script>
+    const A = document.getElementById('a').value;
+    const B = document.getElementById('b').value;
+
+    function a1(){
+        const A =+ document.getElementById('a').value;
+        const B =+ document.getElementById('b').value;
+        document.getElementById('int').value = A+B;
+    }
+    function s1(){
+        const A =+ document.getElementById('a').value;
+        const B =+ document.getElementById('b').value;
+         document.getElementById('int').value =A-B;
+    }
+    function m1(){
+        const A=+ document.getElementById('a').value;
+        const B =+ document.getElementById('b').value;
+        document.getElementById('int').value = A*B;
+    }
+    function d1(){
+        const A =+ document.getElementById('a').value;
+        const B =+ document.getElementById('b').value;
+        document.getElementById('int').value =A/B;
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(253, 251, 251);
+    width: 100%;
+    display: flex;
+    gap:  20px;
+}
+.first-div{
+    background-color: rgb(134, 108, 184);
+    width: 50%;
+    height: 100vh;
+}
+
+.second-div{
+    background-color: greenyellow;
+    width: 50%;
+    height: 100vh;
+}
+
+
