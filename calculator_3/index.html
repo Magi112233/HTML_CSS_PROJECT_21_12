@@ -29,10 +29,13 @@
     </div>
 <!-- //----------------------------------------------------------- -->
     <div class="second-div">
-        <h3>CALCULATOR</h3>
 
-        <input type="text" id="magi">
-        <div class="main-div">
+        
+        <div class="outer-div">
+            <h3>CALCULATOR</h3>
+            <input  type="text" id="magi">
+        
+            <div class="main-div">
             <div>
                 <button id="7">7</button>
                 <button id="8">8</button>
@@ -58,8 +61,9 @@
                 <button id="=">=</button>
             </div>
             </div>
-        </div>
 
+        </div>
+</div>
 
     </div>
 </body>
@@ -110,16 +114,17 @@ const add =document.getElementById('+');
 const sub =document.getElementById('-');
 const mul =document.getElementById('*');
 const div =document.getElementById('/');
+const equl =document.getElementById('=')
 
 function checkValid(i) {
   if (/[^0-9+\-*/().]/.test(i)) {
     return false;
   }
   return true;
-}
+}  
 
-document.getElementById("magi").addEventListener("input", function (e) {
-  const val = e.target.value; // syntax
+document.getElementById("magi").addEventListener("input", function (event) {
+  const val = event.target.value; // syntax
   const check = checkValid(val);
   //   console.log("check", check);
 
@@ -130,13 +135,15 @@ document.getElementById("magi").addEventListener("input", function (e) {
 });
 
 
-seven.addEventListener("click", function () {
+seven.addEventListener("click",  ()=> {   // anonimous function or nameless function  
   input.value += seven.innerText;
 });
 
 eight.addEventListener("click", () => {
   document.getElementById("magi").value += eight.innerHTML;
 });
+
+
 nine.addEventListener('click',ninefun);
 function ninefun() {
   input.value += nine.innerText;
@@ -184,17 +191,14 @@ doublezero.addEventListener('click',()=>{
 })
 
 equl.addEventListener('click',function(){
-    let val =input .value;
 
-    if (!/^[0-9+\-*/().]+$/.test(val) || !/[0-9)]$/.test(input.value)) {
-        return;
-  }
- 
-  let result = eval(val);
-  input.value = result;
+   input.value = eval( input.value)
+
 });
 
 
 </script>
 
 </html>
+
+

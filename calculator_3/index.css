@@ -1,11 +1,11 @@
 body{
-    background-color: rgb(253, 251, 251);
+    background-color: rgb(240, 229, 229);
     width: 100%;
-    display: flex;
+    display: flex;  
     gap:  20px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 .first-div{
     background-color: burlywood;
@@ -18,11 +18,7 @@ body{
     align-items: center; */
 }
 
-.second-div{
-    background-color: greenyellow;
-    width: 50%;
-    height: 100vh;
-}
+
 input{
     display: flex;
     outline: none;
@@ -42,8 +38,50 @@ h2{
     font-size:40px ;
     color: blue;
 }
+/* ----------------------------------------------------------- */
 
+.second-div{
+    /* display: flex; */
+    /* justify-content: center; */
+    background-color: aqua;
+    width: 50%;
+    
+}
+.outer-div input{
+    width: 100%;
+    margin-bottom: 19px;
+    padding: 4px;
+    margin-top: 5px;
+}
 
-    
-    
+.outer-div{
+    background-color: blue;
+    width: 350px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+.main-div div{
+    display: flex;
+    justify-content: space-between;
+
+}
+button{
+   font-size: 30px;
+   padding: 10px;
+   height: 55px;
+   width: 55px;
+   gap: 9px;
+   margin-bottom: 15px;
+   outline: none;
+   border: none;
+   border-radius:7px;
+   cursor: pointer;
+
+}
+h3{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 20px;
+}
 
