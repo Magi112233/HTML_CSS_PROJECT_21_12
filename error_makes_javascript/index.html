@@ -218,7 +218,10 @@ function deleteitem(event){
 }
 </script> -->
 <!-- ---------------------------------------------------------------- -->
-<style>
+
+
+<!-- --------------------------------------to do list---------------------------- -->
+<!-- <style>
     .overlay{
         background-color: black;
         width: 100%;
@@ -243,17 +246,41 @@ function deleteitem(event){
     }
 </style>
 
-<button onclick="show">Show</button>
+<button onclick="show()">Show</button>
 <div class="overlay"></div>
 <div class="popupbox">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa fugit quidem perspiciatis enim repudiandae quam voluptatum ducimus? Atque facilis necessitatibus quas rerum aliquam blanditiis cum. Consequuntur quod maxime alias!</p>
-    <button>Close</button>
+    <button onclick="closepopup()">Close</button>
 </div>
 
 <script>
     let popupoverlay = document.querySelector(".overlay")
     let popupbox = document.querySelector(".popupbox")
+
     function show(){
         popupbox.style.display="block"
+         popupoverlay.style.display="block"
     }
-</script>
+    function closepopup(){
+       popupbox.style.display="none"
+       popupoverlay.style.display="none"
+    }
+</script> -->
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+
+<!-- <button id="btn">Show</button>
+<script>
+
+    let button =document.getElementById("btn")
+    button.addEventListener("click",function(){
+        alert("Magi")
+    })
+    button.addEventListener("mouseover",function(){
+        alert("mouse over")
+    })
+function alertmessage(){
+    alert("hello")
+
+}
+</script> -->
