@@ -253,6 +253,28 @@
 //   console.log(count);
 // }
 // 5.
-for (count = 1; count >= 5; count = count + 1) {
-  console.log(count + "x2=");
-}
+// ---------------------------------------------------------
+// ----------------RANDOMNUMBER---------------
+
+// var a = Math.random();
+// console.log(a);
+
+// var b = Math.random(); // Random number between 0 and 100
+// console.log(b);
+
+// let a = Math.floor(7.99);
+// console.log(a)
+
+// let a = Math.random();
+// console.log(Math.floor(a * 10) + 1);
+
+// let a = Math.floor(5.987);
+// console.log(a);
+// ------------------------------------------------------------------
+// let fruit = ["apple", "orange", "grape", "banana"];
+// console.log(fruit.length);
+// // console.log(frute[2]);
+// for (count = 0; count <= 3; count = count + 1) {
+//   console.log(fruit[count]);
+// }
+// --------------------------------------------------------

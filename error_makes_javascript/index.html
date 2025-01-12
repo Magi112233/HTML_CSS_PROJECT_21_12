@@ -33,19 +33,227 @@
     }
 </script> -->
 <!-- ----------------------------------------------- -->
- Value A
- <input id="anum1">
- Value B
- <input id="num2"><br>
- <p id="p"></p>
-  <button onclick="btn()">add</button>
+<!-- <h1>Guess the number</h1>
+<input id="guessnumber">
+<button onclick="check()">Check</button>
+<p id="result">Your are Wrong/Right</p>
+<p id="score">Score:10</p>
 
 <script>
-   let A= document.getElementById("num1").value;
-   let B = document.getElementBtId("num2").value;
-   ( document.getElementByid(A+B))
+let guessnumber = document.getElementById("guessnumber")
+let result = document.getElementById("result")
+let score =document.getElementById("score")
+let randomNumber = Math.floor(Math.random()*10)+1
+let totalscore =10
 
-   function btn(){
+function check(){
+    let enterednumber = guessnumber.value
+    if(randomNumber==enterednumber){
+        console.log("Right")
+        result.textContent="Right"
+        alert("YOU WON...")
+    }
+    else{
+        totalscore = totalscore-1
+        score.textContent = "score:"+totalscore
+        result.textContent="Wrong"
+    }
+}
+</script> -->
+<!-- ------------------------------------------------------------------------------------------------- -->
+ <!-- -------------------------------    DOM-manipulation------------------------------------ -->
+<!-- <style>
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-weight: 50pxs;
+        color: black;
+        background-color: black;
+        height: 200px;
+        width: 200px;
+        transition: 2s;
+        cursor: pointer;
+    }
+    .widthmax{
+        width: 500px;
+    }
+</style>
+<div id="box">Box</div><br>
+<button onclick="change()">Change color</button>
 
-   }
+<script>
+    let box =document.getElementById("box")
+
+    function change()
+    {
+        box.style.backgroundColor=["red"  ]
+        box.setAttribute("class","widthmax")
+    }
+</script> -->
+<!-- --------------------------------------------------------------------------------------- -->
+<!-- 1. -->
+
+<!-- <input id="inputbox" onkeyup="update()">
+<!-- <button onclick="btn()">click</button> -->
+<h1 id="result"></h1>
+
+<script>
+    let box = document.getElementById("inputbox");
+    let result1 = document.getElementById("result")
+
+    function update(){
+        result.textContent = box.value
+    }
+</script> -->
+<!-- ---------------------------------------------------------------------------------------------------------- -->
+
+<!-- <button  onclick="btn()">ADD</button> 
+<div id="result"></div>
+
+<script>
+    // let button = document.getElementById("button")
+    let div = document.getElementById("result")
+    function btn(){
+        let listitem = document.createElement("h1")------create new element
+        listitem.textContent = "Hello"
+        div.append(listitem)
+
+    }
+</script> -->
+<!-- ----------------------------------------------------------------------------------------------------------------
+ ----------- -->
+<!-- <style>
+    div{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+    }
+    
+</style>
+ <div>
+    <button id="btn" onclick="update()">Change Color</button>
+ </div>
+
+ <script>
+    // let button = document.getElementById("btn").style.backgroundColor="red"
+let btn =document.getElementById("btn")
+
+function update(){
+    btn.style.backgroundColor="red"
+}
+</script> -->
+<!-- ------------------------------------------------------------------ -->
+
+<!-- <h1 id="name">Name</h1>
+<br>
+<button id="btn1" onclick="cli1()">Ayan</button>
+<button id="btn2" onclick="cli2()">Magi</button>
+<button id="btn3" onclick="cli3(event)">Lia</button>
+
+<script>
+    let name1 = document.getElementById("btn1")
+    let name2 = document.getElementById("btn2")
+    let name3 = document.getElementById("btn3")
+    let tag = document.getElementById("name")
+
+function cli1(){
+    tag.textContent = name1.innerHTML;
+}
+function cli2(){
+    tag.textContent = name2.innerHTML
+}
+function cli3(event){
+    tag.textContent = event.target.textContent
+}
+</script> -->
+<!-- --------------------------------REMOVE--------------------------------- -->
+
+<!-- <h1  onclick="deleteitem(event)">One</h1>
+<h1  onclick="deleteitem(event)">Two</h1>
+<h1  onclick="deleteitem(event)">Three</h1>
+<h1  onclick="deleteitem(event)">Four</h1>
+<h1  onclick="deleteitem(event)">Five</h1>
+<h1  onclick="deleteitem(event)">Six</h1>
+
+<script>
+function deleteitem(event){
+    event.target.remove()
+}
+</script> -->
+<!-- ----------------------------QUERY SELECTORALL-------------------------------------------------------------- -->
+
+<!-- <h1 class="ok">One</h1>
+<h1 class="ok">two</h1>
+<h1 class="ok">three</h1>
+<script>
+    let div = document.querySelectorAll(".ok")
+    for(count=0;count<div.length;count=count+1){
+        console.log(div[count].textContent)
+    }
+</script> -->
+<!-- <!-- ------------------------------------------------- -- -->
+
+<!-- --------------------------TODO LIST----------------------------- -->
+
+<!-- <input id="input">
+<button onclick="add()">Add</button>
+<ul id="list-container">
+    <li>Hello
+        <button onclick="deleteitem(event)">Delete</button>
+    </li>
+</ul>
+
+<script>
+let ul =document.getElementById("list-container")
+let input = document.getElementById("input")
+function add(){
+    listitem = document.createElement("li")
+    listitem.innerHTML = input.value+"<button onclick='deleteitem(event)'>delete</button>"
+    ul.append(listitem)
+}
+function deleteitem(event){
+    event.target.parentElement.remove()
+}
+</script> -->
+<!-- ---------------------------------------------------------------- -->
+<style>
+    .overlay{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0.8;
+        z-index: 1;
+        display: none;
+    }
+    .popupbox{
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        color: black;
+        width: 40%;
+        padding: 20px;
+        border-radius: 10px;
+        left: 30%;
+        display: none;
+    }
+</style>
+
+<button onclick="show">Show</button>
+<div class="overlay"></div>
+<div class="popupbox">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa fugit quidem perspiciatis enim repudiandae quam voluptatum ducimus? Atque facilis necessitatibus quas rerum aliquam blanditiis cum. Consequuntur quod maxime alias!</p>
+    <button>Close</button>
+</div>
+
+<script>
+    let popupoverlay = document.querySelector(".overlay")
+    let popupbox = document.querySelector(".popupbox")
+    function show(){
+        popupbox.style.display="block"
+    }
 </script>
