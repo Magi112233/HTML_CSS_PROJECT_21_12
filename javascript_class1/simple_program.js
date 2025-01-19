@@ -47,7 +47,7 @@
 //   console.log("value of mul :", e1 * e2);
 // } else if (calc === "DIV");
 // {
-//   console.log("div", e1 / e2);
+//   console.log(calc === "div");
 // }
 //-----------------------------------
 
@@ -130,7 +130,8 @@
 // if (isNaN(a)) {
 //   alert("Please enter your mark");
 // } else if (a >= 101) {
-//   alert("Pleasl  enter your correct mark");
+//   alert("Please
+//   enter your correct mark");
 // } else if (a === 0) {
 //   alert("Please enter your correct mark");
 // } else if (a >= 90) {
@@ -164,3 +165,42 @@
 // };
 // console.log(myobj);
 //-------------------------------------------------------------------------
+// ..................................typeof............................
+// let A = 2 + 3;
+// console.log("G", A);
+// --------
+
+// let val1 = 1;
+// let val2 = "2";
+// console.log("type 1:", typeof val1);
+// console.log("type 2:", typeof val2);
+// --------------------------
+
+// x = 2;
+// y = 9;
+// let z = x + y;
+// console.log(z);
+//------------------------
+
+// let carname;
+// carname = "volvo";
+// console.log(carname);
+//-----------------------------
+
+// const car = 12;
+// console.log("value", typeof car);
+//-----------------------------
+
+// let x = 3;
+// console.log(++x);
+
+// let s = 3;
+// console.log(s++);
+// console.log(s);
+//----------------------------------
+// let button = document.getElementById("js").onclick;
+
+// function but() {
+//   let a = 1 + 3;
+//   console.log(a);
+// }

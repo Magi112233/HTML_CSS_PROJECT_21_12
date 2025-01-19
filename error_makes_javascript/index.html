@@ -7,7 +7,7 @@
     //select p tag//
     let para = (document.getElementById("one"))
     console.log(para.textContent)
-    para.textContent = "bye "
+    para.textContent = "hai "
 </script> -->
 <!-- //------------------------------------------------ -->
 
@@ -59,6 +59,7 @@ function check(){
         result.textContent="Wrong"
     }
 }
+
 </script> -->
 <!-- ------------------------------------------------------------------------------------------------- -->
  <!-- -------------------------------    DOM-manipulation------------------------------------ -->
@@ -88,7 +89,7 @@ function check(){
 
     function change()
     {
-        box.style.backgroundColor=["red"  ]
+        box.style.backgroundColor="red"  
         box.setAttribute("class","widthmax")
     }
 </script> -->
@@ -96,27 +97,30 @@ function check(){
 <!-- 1. -->
 
 <!-- <input id="inputbox" onkeyup="update()">
-<!-- <button onclick="btn()">click</button> -->
-<h1 id="result"></h1>
+<button onclick="btn()">click</button>
+<h1 id="result">value</h1>
 
 <script>
     let box = document.getElementById("inputbox");
     let result1 = document.getElementById("result")
+    
 
     function update(){
-        result.textContent = box.value
+        result.textContent= box.value
+        result.style.color = "red"
     }
 </script> -->
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 
 <!-- <button  onclick="btn()">ADD</button> 
 <div id="result"></div>
+<h2></h2>
 
 <script>
     // let button = document.getElementById("button")
     let div = document.getElementById("result")
     function btn(){
-        let listitem = document.createElement("h1")------create new element
+        let listitem = document.createElement("h6")//------create new element
         listitem.textContent = "Hello"
         div.append(listitem)
 
@@ -132,42 +136,44 @@ function check(){
     }
     
 </style>
- <div>
+ <div id="div">
     <button id="btn" onclick="update()">Change Color</button>
  </div>
 
  <script>
     // let button = document.getElementById("btn").style.backgroundColor="red"
 let btn =document.getElementById("btn")
-
+let div = document.getElementById("div")
 function update(){
     btn.style.backgroundColor="red"
+    div.style.backgroundColor="green"
 }
 </script> -->
 <!-- ------------------------------------------------------------------ -->
 
-<!-- <h1 id="name">Name</h1>
-<br>
-<button id="btn1" onclick="cli1()">Ayan</button>
-<button id="btn2" onclick="cli2()">Magi</button>
-<button id="btn3" onclick="cli3(event)">Lia</button>
+    <!-- <h1 id="name">Name</h1>
+    <br>
+    <button id="btn1" onclick="cli1()">Ayan</button>
+    <button id="btn2" onclick="cli2()">Magi</button>
+    <button id="btn3" onclick="cli3(event)">Lia</button>
 
-<script>
-    let name1 = document.getElementById("btn1")
-    let name2 = document.getElementById("btn2")
-    let name3 = document.getElementById("btn3")
-    let tag = document.getElementById("name")
+    <script>
+        let name1 = document.getElementById("btn1")
+        let name2 = document.getElementById("btn2")
+        let name3 = document.getElementById("btn3")
+        let tag = document.getElementById("name")
 
-function cli1(){
-    tag.textContent = name1.innerHTML;
-}
-function cli2(){
-    tag.textContent = name2.innerHTML
-}
-function cli3(event){
-    tag.textContent = event.target.textContent
-}
-</script> -->
+    function cli1(){
+        tag.textContent = name1.innerHTML;
+        
+    }
+    function cli2(){
+        tag.textContent = name2.innerHTML
+    }
+    function cli3(event){
+        tag.textContent = event.target.textContent
+    }
+    </script> -->
 <!-- --------------------------------REMOVE--------------------------------- -->
 
 <!-- <h1  onclick="deleteitem(event)">One</h1>
@@ -283,4 +289,16 @@ function alertmessage(){
     alert("hello")
 
 }
+</script> -->
+<!-- ----------------------------------------------------------------------- -->
+
+<!-- <h1 id="h1">Ayan,Magi</h1>
+<button onclick="btn()">Click</button>
+
+<script>
+    const Fname=document.getElementById("h1")
+    function btn(){
+        Fname.textContent="Ayan, Magi, Lia"
+    }
+
 </script> -->

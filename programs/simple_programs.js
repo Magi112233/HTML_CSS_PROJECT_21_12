@@ -7,12 +7,13 @@
 // function a(str) {
 //   console.log(str);
 //   const splitValue = str.split("");
-//   //   console.log(splitValue);
+//   console.log(splitValue);
 
 //   const reverseValue = splitValue.reverse();
-//   //   console.log(reverseValue);
+//   console.log(reverseValue);
 
 //   const joinvalue = reverseValue.join("");
+//   console.log(joinvalue);
 
 //   return joinvalue;
 // }
@@ -55,7 +56,7 @@
 //     return "Odd";
 //   }
 // }
-// const result = check(7);
+// const result = check(9);
 // console.log(result);
 
 // console.log(check(8));

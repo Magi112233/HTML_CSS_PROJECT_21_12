@@ -1,0 +1,51 @@
+
+<p id="pid" ></p>
+
+<div class="div1">div1</div>
+<div class="div1">magii</div>
+<div class="div2"></div>
+
+<h1 id="h1">magi</h1>
+<h1>ayan</h1>
+
+
+
+<script>
+    // -------------------ACCESSING DOM ELEMENTS-------------------------
+// //1.BY ID:
+//Accesses an element with a specific id.
+const a =document.getElementById("pid")
+
+//2.BY Class Name:
+//Returns a Collection of elements with a specific class name
+const b = document.getElementsByClassName("div1")
+b[0].style.backgroundColor ="red"
+b[1].style.color = 'green'
+console.log(b)
+
+//3.BY Tag Name:
+//Returns all elements with a specific tag name.
+const c = document.getElementsByTagName("h1")
+console.log(c[0])
+
+    //4.BY Query Selector:
+    const d = document.querySelector(".div1")
+    d.style.backgroundColor="blue"
+    console.log(d)
+
+    const e = document.querySelectorAll(".div1")
+    e[1].style.backgroundColor="black"
+    console.log(e[1])
+
+// ---------------------------------------------------------------------
+
+// ---------------------------Modifying DOM elements------------------------
+
+//1.Chenge Content:
+//updates the text element.
+
+document.getElementById("h1").innerText="lia"
+
+
+
+</script>
