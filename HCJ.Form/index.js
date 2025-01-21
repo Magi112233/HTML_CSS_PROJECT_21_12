@@ -1,5 +1,5 @@
-const form = document.querySelector("#form");
-const username = document.querySelector("#usernsme");
+const form = document.getElementById("form");
+const username = document.querySelector("#username");
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const cpassword = document.querySelector("#cpassword");
@@ -49,7 +49,7 @@ function validateInputs() {
 //element - password,msg-pas is reqd
 function setError(element, message) {
   const inputGroup = element.parentElement;
-  const errorElement = inputGroup.querySelector("error");
+  const errorElement = inputGroup.querySelector(".error");
 
   errorElement.innerText = message;
   inputGroup.classList.add("error");
@@ -58,7 +58,7 @@ function setError(element, message) {
 
 function setSuccess(element) {
   const inputGroup = element.parentElement;
-  const errorElement = element.querySelector("error");
+  const errorElement = element.querySelector(".error");
 
   errorElement.innerText = "";
   inputGroup.classList.add("success");

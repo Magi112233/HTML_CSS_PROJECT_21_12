@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            padding: 20px;
+        }
+
+        *{
+            margin: 0;padding: 0;
+        }
+
+        #hello-h1{
+            color: #d3fc03 ;
+            /* background-color: red;    */
+            width: 50%;
+            padding: 10px;
+            border-color: red;
+            border-style: solid;
+            border-radius: 30px;
+            border-width: 2px;
+           
+        }
+
+        h2{
+            color: rgba(15, 255, 47, 0.5); padding: 10px;
+            border: dotted 2px green ;
+            border-top-left-radius: 10px;
+        }
+
+        #div1{
+            height: 300px;
+             border: solid 2px skyblue;
+            background-image: url(image1.jpg) ,url(360_F_615798464_HBkmM8FvVGx4SiAmrm2Xdnn4RrNwS2Hu.jpg);  
+            background-size: 400px 100px , 400px 1000px;
+            /* background-repeat: repeat-y;
+            background-repeat: repeat-x; */
+            background-repeat: no-repeat;
+            background-position:  bottom ,left;
+            /* background-attachment: fixed ,fixed   ; */
+         }
+
+         #text-property{
+            text-align: center;
+            text-decoration: overline;
+            text-decoration-color: chartreuse;
+            text-decoration-style: dashed;
+            text-decoration-thickness: 3px;
+            text-transform: capitalize;
+            text-shadow: 0px  4px 2px red;
+            text-indent: 420px;
+            letter-spacing:2px;
+            -webkit-text-stroke: 1px blue;  
+            word-spacing: 10px;
+            line-height: 10px;
+            column-count: 50px;
+            column-rule: 10px 20px 10px;
+            column-gap: 40px;
+        }
+
+        #para1{
+            color: darkmagenta;
+            column-count: 4;
+            column-rule: dashed black 1px;
+            padding-left: 5px;
+            column-gap: 60px;            
+        }
+
+     
+
+#h3-font{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-variant: small-caps    ;
+    position: sticky;
+    top: 0;
+} 
+
+
+.heading{
+    color: red;
+/* list-style-type:circle ; */
+list-style-image: url(image1.jpg);
+list-style-position: inside;
+
+}
+
+.data{
+    color: blue;
+    /* list-style-image: url(image1.jpg);
+    list-style-position:inside; */    
+}
+
+
+#s1{
+    height: 300px;
+    background-color: tomato;
+    width: 30%;
+    /* float: right; */
+}
+
+
+#s2{
+    height: 300px;
+    background-color: palevioletred;
+    width: 40%;
+    /* float: left; */
+}
+
+
+
+#d4{
+        width: 100px;
+        height: 100px;
+        background-color: darkmagenta;
+
+        position: relative;
+        bottom: 400px;
+        left: 550px;
+    }
+
+/* #d1 h1{
+    color: red;
+    position: relative;
+    bottom: 300px;
+    left: 300px;
+} */
+
+#d1{
+    height: 100px;
+    width: 100px;
+    background-color: #d3fc03;
+    position: fixed;
+    top: 0;
+    right: 200px;
+}
+
+/* #d1 h1{
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+
+} */
+
+
+
+    </style>
+</head>
+<body>
+<h1 id="hello-h1">hello lia</h1>
+
+<h2>hello lia</h2>
+
+<div id="div1">hello every one</div>
+
+<h1 id="text-property">text propetry</h1>
+
+<p id="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo alias qui nisi, blanditiis molestias dicta eligendi provident tempora aspernatur voluptate, numquam excepturi doloribus, voluptatibus quas necessitatibus fuga. Nulla, fuga dolores.loremLorem ipsum dolor sit, amet consectetur adipisicing elit. Quo alias qui nisi, blanditiis molestias dicta eligendi provident tempora aspernatur voluptate, numquam excepturi doloribus, voluptatibus quas necessitatibus fuga. Nulla, fuga dolores.lorem</p>
+
+<h3 id="h3-font">Font propety</h3>
+
+<ul>
+    <li class="heading">Language</li>  
+    <li class="data">java</li>
+    <li class="heading">RDBMS</li>
+    <li class="data">My sql</li>
+</ul>
+
+<section id="s1">
+    float exaple
+</section>
+
+<section id="s2">
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo veritatis alias at accusamus aspernatur quidem doloribus laudantium. Recusandae perferendis provident cupiditate fugiat neque itaque quibusdam obcaecati magnam, dolores tempore animi!
+</section>
+
+
+
+    <div id="d4"></div>
+
+    <div  id="d1">
+        <h1 >10</h1>
+    </div>
+
+
+
+
+    
+</body>
+</html>
