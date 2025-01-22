@@ -9,11 +9,14 @@
             margin: 0;
             padding: 0;
         }
+        body{
+            padding: 30px;
+        }
 
         h3{
             padding: 15px;
         }
-        .div1{
+        /* .div1{
             background-color:chartreuse;
             height: 200px;
             width: 200px;
@@ -29,17 +32,20 @@
         }
         #ayan{
             position: sticky;
-            color: rgb(255, 0, 0);
+            color: blue;
             top: 0;
             left: 90px;
-        }
-        #div2{
+            border: dotted 2px green; 
+            padding: 10px; 
+            width: 20%;
+        } */
+        /* #div2{
             background-color: darkseagreen;
             height: 200px;
             width: 200px;
             position: relative;
             left: 50px;
-        }
+        } */
         h5{
             position: absolute;
             /* right: 0; */
@@ -72,7 +78,105 @@
             color: rgb(31, 4, 150);
             list-style-type: circle;
             /* list-style-image: url(images.jpg); */
+            /* list-style-position: inside; */
         }
+        /* .data{
+            color: crimson;
+            list-style-image: url(images.jpg);
+            list-style-position: inside;
+        } */
+
+        .border-div{
+            color: green;
+            padding: 10px;
+            width: 15%;
+            font-size: 50px;
+            /* border-bottom: blue; */
+            border-style: solid;
+            border-top-left-radius: 25px;
+            border-top: none;
+            /* border-right: none; */
+            border-bottom-right-radius: 25px;
+            border-bottom: none;
+            border-color: red;
+            text-align: center;
+       }
+       .image{
+        background-image: url(images.jpg);
+        /* background-size: 20% 100px; */
+        height: 190px;
+        width: 270px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+        /* text-align: center;
+        align-items: center; */
+        /* margin-top: 20px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .propety{
+        /* text-decoration-style: dotted; */
+        background-color: wheat;
+        padding: 10px;
+        /* text-shadow: 3px 2px 300px; */
+        /* text-indent: 1112px; */
+        text-decoration-style:dotted;
+        font-size: 50px;
+        /* line-height: 10px; */
+        /* word-spacing: 20px; */
+        -webkit-text-stroke: 2px red;
+        /* position: relative; */
+        margin-top: 10px;
+       }
+/* 
+       #text-dec1{
+           text-decoration: underline;
+           text-decoration-style: dashed;   
+        font-size: 30px;
+        word-spacing: 40px;
+        position: absolute;
+        left: 300px;
+        
+       } */
+
+       /* h6{
+        background-color: darkcyan;
+        width: 80px;
+        padding: 20px;
+        font-size: 30px;
+        overflow: hidden;
+        margin: auto;text-align: center;
+       }
+       .li{
+        background-color: rgb(12, 11, 11);
+        color: rgb(245, 222, 179);
+        display: inline;
+        padding: 20px;text-align: center;     
+       } */
+
+       /* #inline-block{
+        background-color: darkgreen;
+        display: inline-block;
+        padding: 20px;
+        font-size: 20px;
+        margin-bottom: 30px;
+       }             
+        
+     input{
+        display: block;
+       }
+       button{
+        display: block;
+       } */
+        #display-flex{
+            display: flex;
+            flex-direction: column;
+            width: 20%;gap: 10px;
+
+        }
+
 
 
 
@@ -107,6 +211,52 @@
     <li class="heading">RDBMS</li>
     <li class="data">mySQL</li>
    </ul>
+
+   <div class="border-div">Border</div>
+   <div class="image">Chilli</div>
+
+   <div class="propety">text propetry</div>
+
+   <h4 id="text-dec1">Text propery</h4>
+
+      <ul>
+        <li class="li">apple</li>
+        <li class="li">apple</li>
+        <li class="li">apple</li>
+        <li class="li">apple</li>
+    </ul>
+
+    <h6>magi</h6>
+
+    <ul >
+        <li id="inline-block">mango</li>
+        <li id="inline-block">mango</li>
+        <li id="inline-block">mango</li>
+        <li id="inline-block">mango</li>
+    </ul>
+
+    <div class="block">
+        <button>btn1</button>
+        <button>btn2</button>
+        <button>btn3</button>
+        <input>
+        <input>
+    </div>
+
+    <idv id="display-flex">
+        <input>
+        <input>
+        <input type="text">
+    </idv>
+
+    <ul>
+        <li>apple</li>
+        <li>mango</li>
+        
+        <li>banana</li>
+    </ul>
+
+   
 
 
 
