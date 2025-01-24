@@ -3,7 +3,7 @@
 // let num1 = prompt("Enter the value");
 // let result = num1 % 2;
 
-// if (result === 1) {
+// if (result === 0) {
 //   console.log("Number is even", num1);
 // } else {
 //   console.log("Number is odd", num1);

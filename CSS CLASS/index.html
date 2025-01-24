@@ -170,20 +170,123 @@
        button{
         display: block;
        } */
-        #display-flex{
+        /* #display-flex{
             display: flex;
             flex-direction: column;
             width: 20%;gap: 10px;
 
+        } */
+
+        #flex{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;background-color: grey;padding: 20px;
         }
 
+        /* //////////////////////////////////////////////////////////////// */
+.border{    
+    width: 30%;
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+    color: red;
+    border-color: black;
+    border-style:double ;
+    border-radius: 10px;
+    border-bottom: solid green;
+    background-image: url(image1.jpg);
+    background-size: 900px 300pxpx;
+}
 
+.text-property{
+    background-color: yellow;
+    width: 200px;
+    padding: 20px;align-items: center;
+    text-decoration: line-through;
+    text-decoration-style: dashed ;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-shadow:10px 3px 12px blue;
+    text-indent: 10px;letter-spacing: 10px;
+    -webkit-text-stroke: 2px;
+    line-height: 20px;
+
+}
+
+.font{
+    color: crimson;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: normal;
+    font-variant: small-caps;margin-top: 20px;
+}
+
+li{
+    list-style: none;
+    list-style-image: url(images.jpg);
+    list-style-position: inside;
+    font-size: 50px;
+    text-transform: capitalize;font-style: italic;
+    font-weight: bold;
+}
+
+#s1{
+    background-color: greenyellow;
+    width: fit-content;
+    padding: 10px;
+    font-size: 30px;font-weight: bold;
+    text-transform: capitalize;margin-bottom: 10px;
+    float: right;
+}
+#s2{
+    background-color: gold;
+    width: fit-content;
+    padding: 10px;
+    font-size: 30px;font-weight: bold;
+    text-transform: capitalize;
+    float: left;
+    margin-bottom: 300px;
+}
+
+.sticky{
+    color: blue;
+    position: sticky;
+    top: 0;
+    float: right;
+    text-transform:uppercase ;
+    padding: 15px;width: fit-content;
+    font-style: italic;font-weight: bold;font-size: 119px;
+    outline: auto;
+    
+    /* border-radius: 10px; */
+    /* border-bottom-right-radius: 30px; */
+    
+
+}
+
+button{    
+    font-size: large;font-weight: bold;
+    display: block;
+    padding: 10px;background-color: hotpink;
+    outline: none;border: none;
+    margin-top: 10px;border-radius: 5px;
+}
+
+input{
+    display: flex;
+    margin-top: 10px;
+    border-radius: 5px;
+    outline: none;
+     outline-color: rebeccapurple;padding: 9px;
+}
 
 
     </style>
 </head  >
-<body>
-       <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam reprehenderit odio mollitia enim tempora officiis, velit, quod magnam, eveniet voluptate sapiente atque amet eaque eos adipisci assumenda in! Distinctio, rerum!</h3>
+
+       <!-- <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam reprehenderit odio mollitia enim tempora officiis, velit, quod magnam, eveniet voluptate sapiente atque amet eaque eos adipisci assumenda in! Distinctio, rerum!</h3>
     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam reprehenderit odio mollitia enim tempora officiis, velit, quod magnam, eveniet voluptate sapiente atque amet eaque eos adipisci assumenda in! Distinctio, rerum!</h3>
     <h2 id="ayan">hello Ayan</h2>
     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam reprehenderit odio mollitia enim tempora officiis, velit, quod magnam, eveniet voluptate sapiente atque amet eaque eos adipisci assumenda in! Distinctio, rerum!</h3>
@@ -240,7 +343,7 @@
         <button>btn2</button>
         <button>btn3</button>
         <input>
-        
+
         <input>
     </div>
 
@@ -250,14 +353,35 @@
         <input type="text">
     </idv>
 
-    <ul>
+    <ul id="flex">
         <li>apple</li>
         <li>mango</li>
-
+        <li>graps</li>
         <li>banana</li>
-    </ul>
-
+    </ul> -->
+<!-- ///////////////////////////////////////////////////////////////// -->
    
+<div class="border">Border</div>
+<div class="sticky">Sticky</div>
+<div class="text-property">Text Property</div>
+<div class="font">Font Property</div>
+<ul>
+    <li>chilli</li>
+</ul>
+<section id="s1">Div1</section>
+<section id="s2">Div2</section>
+<button>Ayan</button>
+<button>Magi</button>
+<button>Lia</button>
+
+<input>
+<input>
+<input>
+
+
+
+
+
 
 
 

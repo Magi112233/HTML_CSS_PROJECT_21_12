@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border{
+            background-color: violet;
+            width: max-content;font-size: 90px;
+            padding: 20px;           
+            border-style: groove;
+            border-color: black;
+            border-radius: 9px;
+            border: double 2px forestgreen;
+            }
+
+            div>h1{
+                background-color: rgb(164, 183, 218);
+                width: 50;
+                padding: 20px;
+                text-align: right;
+                text-decoration: underline;
+                text-decoration-color:  red;
+                text-decoration-style: wavy;
+                text-decoration-thickness: 4px;
+                text-transform: uppercase;
+                text-shadow:goldenrod 3px 2px 3px ;
+                text-indent:   5px;
+                letter-spacing: 3px;            
+                -webkit-text-stroke:1px ;
+                word-spacing: 20px;
+            }
+
+            h2{
+                font-size: 90px;
+                font-style: oblique;
+                color:orangered;
+            }
+
+           #frouit{
+                list-style-image: url(frouit.jpg);
+                list-style-position: inside; 
+                background-size: 20px 20px; 
+                background-repeat: no-repeat;
+                padding-left: 30px; 
+                line-height: 20px;     
+            }
+            #flower{
+                list-style-image: url(flower.jpg);
+                list-style-position: inside;
+            }
+            #tree{
+                list-style-image: url(tree.jpg);
+                list-style-position: inside;
+
+            }
+section{
+    background-image: url(flower.jpg);
+    color:lime;font-size: 30px;
+   font-style: italic;text-transform: capitalize;
+    width: 200px;
+    height: 200px;
+    -webkit-text-stroke: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+#image{
+   float: right;
+   margin-bottom: 30px;
+}
+
+#div1{
+    background-color: orange;
+    width: fit-content;
+    font-size: larger;padding: 10px;
+    font-style: italic;
+    -webkit-text-stroke: 1px;
+    position: fixed;
+    margin-left: 80%;
+
+}
+
+input{
+    margin-top: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 20px;
+    background-color: lightcoral;
+    outline: none;   
+    border-color:deeppink ;
+}
+input:hover{
+    background-color: rgb(160, 145, 145);
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h4>hello world</h4>
+        <div>hello friend</div>
+  </div>
+    
+    <div class="border">Border</div>
+    <div>
+        <h1>Hello Ayan</h1>
+    </div>
+    <div>
+        <h2>hello magi</h2>        
+    </div>
+    <ul>
+        <li id="frouit">Frouit</li>
+        <li id="flower">Flower</li>
+        <li id="tree">Tree</li>        
+    </ul>
+
+    <div>
+        <section>flower</section>
+      </div>     
+      <img id="image" src="flower.jpg">
+
+      <input>
+      <input>
+      <input >
+
+
+
+     
+</body>
+</html>

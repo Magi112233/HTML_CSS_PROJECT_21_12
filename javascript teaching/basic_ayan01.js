@@ -1,6 +1,6 @@
 // variables  let ,const
 // 1 . variable declaration with assignment
-let a = 10;
+let a = 90;
 const b = 20,
   c = "hello";
 
