@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+p{
+    width: 400px;
+}
+
+        p::first-line{
+            
+            color: blue;
+        }
+
+        p::first-letter{
+            color:red;
+            font-size: 25px;
+        }
+
+        p::selection{
+            background-color: black;
+            color: white;
+        }
+
+      li::marker{
+        color: red;
+        font-size: 30px;
+      }
+
+.button{
+    display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        position: relative;
+        text-decoration: none;
+        /* width: 500px; */
+}
+
+.button::before{
+    content: "👉 ";
+}
+
+.button::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 5px;
+
+}
+
+#mob::before{
+    content: "12603";
+    color: red;
+}
+
+#mail::before{
+    content:"12709";
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, excepturi necessitatibus  numquam distinctio dolore in a error! Asperiores, assumenda accusamus doloribus quos vel ducimus at maxime. Laboriosam facilis reprehenderit ipsam.lore</p>
+    
+    <ul>
+        <li>apple</li>
+        <li>apple</li>
+        <li>apple</li>
+        <li>apple</li>
+    </ul>
+
+    <a href="#" class="button">Click me</a>
+
+    <h4 id="mob">9393993949</h4>
+    <h4 id="mail">ayan@gmail.com</h4>
+
+</body>
+</html>

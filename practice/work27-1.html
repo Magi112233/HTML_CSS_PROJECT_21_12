@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27-1-25</title>
+    <style>
+    body{
+        background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%); ;
+
+    }
+        .main-div{
+            background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+            width: 40%;
+            padding: 30px;
+            
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            color: darkblue;
+        }
+
+        p{
+           text-indent: 30px;
+        }
+        p::first-letter{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        button{
+            padding:  10px;
+            font-size: 19px;
+            background-color: lightblue;
+            border-radius: 15px;
+            outline: none;
+            border: none;
+            box-shadow: 0px 0px 2px black;
+            cursor: pointer;
+            transition: box-shadow 1s;
+        }
+        button::before{
+            content:"👉 " ;
+        }
+        button:hover{
+            box-shadow: 0px 0px 8px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <h1>Lorem Text</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laborum doloribus nesciunt magnam nisi, dolor ducimus, dignissimos eos nostrum quos id consequatur quas nemo! Consectetur fuga magnam enim? Deserunt, excepturi.</P>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iure aut excepturi rem quos, temporibus minus hic quasi facere maiores quaerat fugit repudiandae illo, dicta dolores, sunt error amet. Dolores?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut autem dolores officiis tempora eum nemo est a. Pariatur totam nisi voluptatibus, quibusdam, dicta neque saepe molestiae facilis laboriosam illum ipsa!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt nisi nulla consectetur totam exercitationem sed eveniet ipsam, sit ullam? Unde, necessitatibus odit? Eligendi inventore debitis dolorum, voluptate aspernatur tempora molestias!</p>
+        <button>Click Me</button>
+    </div>
+</body>
+</html>

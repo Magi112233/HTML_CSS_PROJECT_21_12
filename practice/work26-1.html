@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* background-color: lightslategrey; */
+           display: flex;
+           justify-content: center;
+           align-items: center;           
+           /* height: 100vh; */
+           flex-direction: column;
+           overflow-y: scroll;
+           height: 1500px;
+
+           /* background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
+           /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
+           /* background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); */
+           /* background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%); */
+           /* background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%); */
+           background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+
+            
+           
+        }
+        .main-div{
+            background-color: #fff;
+            width: 40%;
+            padding: 30px;
+            /* margin: auto; */
+        }
+        p{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: rgb(37, 25, 25);
+            text-indent: 20px;
+        }
+       
+        p::first-letter{
+            font-size: 30px;
+            font-weight: bold;
+            color: red;
+        }
+       div div button{
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            background-color: #726d6d;
+            /* font-weight: 100px; */
+        }
+        button:hover{
+            background-color: #ada1a1;
+           
+        }
+        h2{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 70px;
+        text-decoration:underline ;
+
+        }
+       /* //------------------------------------------------------------  */
+       .btn{
+        /* background-color: blue; */
+        padding: 10px 20px;
+        font-size: 20px;
+        margin-top: 50px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        border-color: red;
+        border-style:  solid;
+        cursor: pointer;
+        transition: background-color 1s,transform 0.5s;
+        /* transition: all 0.5s; */
+       }
+
+       .btn:hover{
+        background-color: rgb(0, 34, 128);
+        transform: scale(1.8);
+        /* transform: scale(2); */
+        /* font-size:50px; */
+       }
+
+       .box{
+        background-color: rgb(248, 5, 86);
+        width: 100px;
+        height: 100px;
+        margin-top:20px;
+        transition :transform 1s ,background-color 0.3s ;
+       }
+
+       .box:hover{
+        /* transform: rotate(45deg) ,translateX(500px); */
+        transform: rotate(360deg); /*translate(500px,100px)*/
+        background-color: yellow;
+       }
+       /* ----------------------------------- */
+
+       .circle{
+        background-color: orangered;
+        width: 200px;
+        height: 200px;
+        margin: 40px;
+        border-radius: 100px;
+        /* border-radius: 50px; */
+        transition: transform 1s ,background-color 0.3s;
+       }
+       .circle:hover{
+        cursor: pointer;
+        transform: rotate(200deg )translateX(400px);
+        background-color:deepskyblue;
+       }
+
+       .circle1{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        background-color: #fff;
+        animation: circle 2s infinite ease-in-out;
+       }
+
+       @keyframes circle{
+        0%,100%{
+            transform: translateY(0);
+        }
+        25%{
+            background-color: darkred;
+        }
+        50%{
+            transform: translateY(300px);
+            background-color: lawngreen;
+        }
+        75%{
+            background-color: gold;
+            
+        }
+        90%{
+            transform: translatey(-150);
+        }
+       }
+    </style>
+</head>
+<body>
+
+    <div class="main-div">
+        <div>
+            <h2>Lorem Text</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi eveniet inventore id illum, optio at itaque odio fugiat consectetur porro officia iste quod officiis. Laudantium illo amet iure tenetur sapiente?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quis eaque quod adipisci veniam ut. Numquam illum saepe eius natus voluptatum odio temporibus. Provident laudantium accusamus, reprehenderit architecto quas deleniti.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti officia consequuntur, exercitationem ab quod excepturi quaerat autem itaque rerum aspernatur quibusdam quia nam magni illo, quasi, unde earum voluptatem! Maxime?</p>
+            <button>Click Me</button>
+        </div>
+    </div>
+
+       
+        <button class="btn">Click Me</button>    
+   
+        <div class="box"></div>
+
+        <div class="circle"></div>
+
+        <div class="circle1"></div>
+
+    
+</body>
+</html>
