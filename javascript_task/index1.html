@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn1" onclick="clfun1()">click1</button>
+    <button id="btn2" onclick="clfun2()">click2</button>
+    <button>click3</button>
+    <button class="btn4">click4</button>
+
+    <!-- 1.Create a button that shows an alert when clicked. -->
+     <button id="button" onclick="bfun()">submit</button>
+
+     <!-- 2Make a paragraph's text change when you click on it. -->
+
+     <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae at nihil quibusdam sit ipsa nesciunt hic in exercitationem eos. Odio quae dolorem sit itaque dolorum ad officiis suscipit nam repellat!</p>
+        <button id="sub" onclick="sub1()">Submit</button>
+
+        <!-- 3.Add an input field and display its value in a div when a button is clicked. -->
+         <input id="int" type="text">
+         <div id="div">magi</div>
+         <button id="clicked" onclick="cfun()">clickmee</button>
+
+         <!-- 4.Change the background color of the page when a button is clicked. -->
+
+         <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt necessitatibus cumque soluta distinctio obcaecati, nobis inventore recusandae eius nesciunt exercitationem amet esse. Facere vero magni, sequi laboriosam cupiditate cumque quibusdam.</p>
+         <button id="color" onclick="color()">color change</button>
+
+         <!-- 5.Create a counter with "+" and "-" buttons to increase and decrease a number. -->
+          <button id="backcolor" onclick="backfun()">babkcolor</button>
+
+
+</body>
+<script>
+    const button1 = document.getElementById("btn1")
+    function clfun1(){
+        alert("hello ayan")
+    }
+
+    const button2=document.getElementById("btn2")
+    button2.addEventListener("click",()=>alert("hello chan   "))
+
+    const button3 = document.getElementsByTagName("button")
+    button3[2].addEventListener("click",()=>alert("hello world"))
+
+    // const button4 =document.getElementsByClassName("btn4")
+    // button4[3].addEventListener("click",()=>alert("Good Mrning"))
+
+
+const click =document.getElementById("button")
+function bfun(){
+    alert("Hello Magi")
+}
+// ----------------------------------------------------------
+// 2.Make a paragraph's text change when you click on it.
+const paragraph=document.getElementById("para")
+// const submit = document.getElementById("sub")
+function sub1(){
+   paragraph.innerHTML= "hello"
+}
+// ----------------------------------------------------------------
+// 3.Add an input field and display its value in a div when a button is clicked.
+const input = document.getElementById("int")
+const div =document.getElementById("div")
+function cfun(){
+   div.innerHTML= input.value
+}
+// ------------------------------------------------
+// 4.Change the background color of the page when a button is clicked.
+const para1 = document.getElementById('para1')
+const color = document.getElementById("color")
+
+color.addEventListener("click",()=>{
+    para1.style.backgroundColor="green"
+})
+
+// ------------------------------------------------
+// 5.Create a counter with "+" and "-" buttons to increase and decrease a number.
+const body = document.getElementsByTagName("body")
+const backcolor=document.getElementById("backcolor")
+backcolor.addEventListener("click",()=>{
+    body.style.backgroundColor="red"
+})
+    
+</script>
+
+</html>

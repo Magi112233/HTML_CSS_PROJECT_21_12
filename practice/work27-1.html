@@ -6,7 +6,7 @@
     <title>27-1-25</title>
     <style>
     body{
-        background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%); ;
+        /* background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%); ; */
 
     }
         .main-div{
@@ -45,6 +45,67 @@
         button:hover{
             box-shadow: 0px 0px 8px black;
         }
+        /* ------------------------------------------------ */
+        .second-div{
+            background-image:linear-gradient(-225deg,#Ac32e4 0% , #7918f2 48%, #4801ff);
+            /* background-color: green; */
+            width:60%;
+            padding: 20px;
+            margin-top: 30px ;
+        }
+        h2{
+            text-align: center;
+        }
+        .lorem-div:first-child{
+           text-align: center;
+        }
+
+
+        @media (max-width:600px){
+            body{
+                overflow: auto;
+               
+            }
+            .main-div{
+                margin-top:40px ;
+                width: 90%;
+                /* overflow-y: scroll; */
+                padding: 15px;
+                margin: auto;
+            }
+
+            .second-div{
+                width: 90%;
+                margin-top: 20px;
+                background-color: black;
+            }
+        }
+
+        @media (min-width:601px)  and (max-width:1024px){
+            .main-div{
+                padding: 10px;
+                width: 45%;
+
+            }
+        }
+li:nth-child(odd){
+   color: rgb(255, 0, 136);
+}
+li:nth-child(even){
+    color: green;
+}
+li{
+    list-style:lower-roman;
+    font-size: 20px;
+}
+     .h4-tag {
+        font-size: 40px;        
+     }  
+     .h4-tag:nth-child(2){
+        color: darkorange;
+     }
+
+
     </style>
 </head>
 <body>
@@ -56,5 +117,26 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt nisi nulla consectetur totam exercitationem sed eveniet ipsam, sit ullam? Unde, necessitatibus odit? Eligendi inventore debitis dolorum, voluptate aspernatur tempora molestias!</p>
         <button>Click Me</button>
     </div>
+
+    <div class="second-div">
+        <h2>Text Property</h2>
+        <p class="lorem-div">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam voluptates, optio laborum nisi nam architecto ad nobis, repellendus soluta quisquam praesentium sequi esse quasi autem amet molestias. Excepturi, officiis ad.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloribus dignissimos praesentium consequatur laborum facilis in fuga possimus exercitationem recusandae unde veritatis enim quo excepturi aperiam natus, sunt obcaecati nobis.</p>
+    </div>
+
+        <li>apple</li>
+        <li>mango</li>
+        <li>banana</li>
+        <li>geaps</li>
+        <li>orang</li>
+        <li>pomogranate</li>    
+
+  <div class="p-tag">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem, rem unde, tenetur ad repudiandae nisi officia ratione accusamus debitis quo, veniam fugiat pariatur distinctio est voluptates saepe dignissimos? Illum.</p>
+  </div>
+  
+
+   
+    
 </body>
 </html>

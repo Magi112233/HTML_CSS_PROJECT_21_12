@@ -1,0 +1,53 @@
+<!-- Create a button that shows an alert when clicked. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+  
+</head>
+<body>
+    
+    <button id="btn"  onclick="btn1()" >click</button>
+
+    <button id="btn2" >submit</button>
+
+    <button class="button">Click</button>
+
+    <button>CLICK</button>
+
+    <button id="btn-submit" class="btn-sub-cls"> SUBMIT</button>
+
+    
+    <script>
+        function btn1() {
+        alert("hello i am button .someone clickd me just now");
+        }
+        const btn = document.getElementById("btn1");
+
+        const btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click", () => alert("helle ayan "));
+
+        
+        const btn3 = document.getElementsByClassName("button");
+        btn3[0].addEventListener("click", () => alert("Good Morning"));
+
+        const button = document.getElementsByTagName("button");
+        button[3].addEventListener("click", () => alert("Good Night"));
+
+        const btn5 = document.querySelector("#btn-submit");
+        btn5.addEventListener("click", () => {
+        btn2.style.color = "red";
+        btn3[0].style.backgroundColor = "green";
+        btn2.innerText = 3 + 7;
+        btn3[0].innerHTML = "hello";
+        });
+
+    </script>
+</body>
+
+
+</html>

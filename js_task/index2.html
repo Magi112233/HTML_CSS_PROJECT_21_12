@@ -1,0 +1,27 @@
+<!-- 2.Make a paragraph's text change when you click on it. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    
+    <p onclick="paragraphfun()" id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est iste dolorum nihil perferendis ut quos, illum eos quo laborum. Nulla voluptate libero nobis quae dolores consequuntur dolorem odit id aperiam. </p>
+    <button onclick="btnclick()">click</button>
+ </body>
+
+ <script>
+    const paragraph =document.getElementById("para")
+ function btnclick(){
+    paragraph.innerHTML="hello";     
+   
+ }
+ function paragraphfun(){
+    paragraph.innerHTML="haii"
+ }
+
+
+ </script>
+ </html>

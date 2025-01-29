@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 3.Add an input field and display its value in a div when a button is clicked. -->
+
+    <input id="int"  type="text">
+    <div id="div"></div>
+    <button onclick="btn()">click</button>
+    
+</body>
+<script>
+    const box =document.getElementById("int")
+    const div =document.getElementById('div')    
+    function btn(){
+        div.innerText=box.value ;
+        // console.log(box.value)
+    }
+
+    
+
+        
+</script>
+</html>
