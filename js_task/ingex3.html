@@ -11,6 +11,14 @@
     <input id="int"  type="text">
     <div id="div"></div>
     <button onclick="btn()">click</button>
+
+
+    <!-- counter -->
+     <div id="counter">
+         <h2 id="">0</h2>
+         <button onclick="incriment()" >+</button>
+        <button onclick="decrement()" >-</button>
+     </div>
     
 </body>
 <script>
@@ -20,6 +28,18 @@
         div.innerText=box.value ;
         // console.log(box.value)
     }
+
+    const counterVal = document.querySelector("#counter>h2");
+  
+    function incriment(){
+        +counterVal.innerText++      
+    }
+
+    function decrement(){
+        +counterVal.innerText--
+    }
+
+    
 
     
 

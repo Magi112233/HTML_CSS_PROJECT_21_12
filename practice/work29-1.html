@@ -5,21 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body id="body">
     <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut saepe dicta at nisi ipsam ut, aspernatur,
      distinctio quo unde commodi itaque dolor accusantium modi dolorem a harum asperiores doloremque corporis.</p>
      <button id="button1" onclick="clickbtn()">click</button>
 
+     <button onclick="clickbtn1()">ClickMe</button>
+     
+
 </body>
 <script>
     const paragraph = document.getElementById("para")
-    // const button =document.getElementById("button1")
+    const button =document.getElementById("button1") 
+
   function clickbtn(){
-    paragraph.style.backgroundColor="green"
+    paragraph.style.color="green"
     paragraph.style.fontSize="30px"
+    paragraph.style.width="45%";
+    paragraph.style.padding="20px"
+    
   }
-// button.addEventListener("click",()=>{
-//     paragraph.style.backgroundColor="red"
-// })
+button.addEventListener("click",()=>{
+    paragraph.style.backgroundColor="#fff"
+    paragraph.style.margin="auto"
+})
+// ---------------------------
+const body = document.getElementsByTagName("body")
+function clickbtn1(){
+    body[0].style.backgroundColor="green"
+}
+
+// 1. Create a button that shows an alert when clicked.
 </script>
 </html>

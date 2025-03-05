@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn-style{
+            background-color: green;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+   <!-- 1. Create a button that shows an alert when clicked. -->
+    <button onclick="alertf()">click</button>
+
+    <!-- 2. Make a paragraph's text change when you click on it. -->
+     <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore molestiae velit ipsum nostrum perferendis autem obcaecati 
+        sint sit beatae ducimus, consequuntur laudantium temporibus saepe repellendus vel iusto. Cumque, minus accusamus.</p>
+        <button id="textchange">clickchange</button>
+
+        <!-- // 3.Add an input field and display its value in a div when a button is clicked. -->
+         <input type="text" id="int">
+         <div id="div-1"></div>
+         <button class="" onclick="input()">clickdiv</button>
+
+         <!-- 4.Change the background color of the page when a button is clicked. -->
+          <p id="para2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis ratione officiis architecto eum animi nulla
+             mollitia suscipit dicta odio, voluptatibus esse quae quos voluptates est sint non nisi hic?</p>
+             <button onclick="backcolor()">backcolor</button>
+
+             <!-- 5.Create a counter with "+" and "-" buttons to increase and decrease a number. -->
+              <div id="counter">0</div>
+              <button onclick="increase()">+</button>
+              <button id="decrease">-</button>
+
+
+</body>
+        <script>
+        // 1.Create a button that shows an alert when clicked.
+        function alertf(){
+            alert("hello ayan")
+        }
+
+        // <!-- 2.Make a paragraph's text change when you click on it. -->
+        const para = document.getElementById("para")
+        const button=document.getElementById("textchange")
+        button.addEventListener("click",()=>{
+            para.innerHTML="Change the text coctent"
+        })
+
+        // 3.Add an input field and display its value in a div when a button is clicked.
+        const int =document.getElementById("int")
+        const div =document.getElementById("div-1")
+        function input(){
+            div.innerText=int.value
+        }
+
+        // 4.Change the background color of the page when a button is clicked.
+        const para2 =document.getElementById("para2")
+        function backcolor(){
+            para2.style.backgroundColor="pink"
+        }
+
+        // <!-- 5.Create a counter with "+" and "-" buttons to increase and decrease a number. -->
+        const counter =document.getElementById("counter")
+        const decrease =document.getElementById("decrease")
+        function increase(){
+            counter.innerText++
+            // console.log( typeof(counter.innerText))
+        }
+            decrease.addEventListener("click",()=>{
+            counter.innerText--  ;                
+        })
+
+        </script>
+
+       
+</html>
