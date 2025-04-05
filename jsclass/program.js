@@ -1008,3 +1008,91 @@
 // };
 // console.log(anagaran(v1, v2));
 // ----------------------------------------------------
+// let num = [1, 3, 5, 2, 4, 6, 7, 3, 2, 5];
+// const dublicate = (d) => {
+//   let res = [];
+//   for (let i of d) {
+//     if (!res.includes(i)) {
+//       res.push(i);
+//     }
+//   }
+//   res.sort();
+//   return res;
+// };
+// console.log(dublicate(num));
+// ---------------------------------------
+// function factorial(f) {
+//   let res = 1;
+//   for (let i = 1; i <= f; i++) {
+//     res = i * res;
+//     console.log(res);
+//   }
+// }
+// console.log(factorial(5));
+// ------------------------------------------
+// function febbonaci(f) {
+//   let res = [0, 1];
+//   for (let i = 2; i < f; i++) {
+//     let r1 = res[res.length - 1];
+//     let r2 = res[res.length - 2];
+//     let val = r1 + r2;
+//     res.push(val);
+//   }
+//   return res;
+// }
+// console.log(febbonaci(159));
+// -------------------------------------------------
+// let a = [1, 2, 3, 4, 6, 7, 8];
+// let b = [2, 3, 5, 6, 7, 9, 1, 0];
+// function merga(m, n) {
+//   //   let res = [...m, ...n];
+//   //   console.log(res);
+//   let res = [];
+//   let res1 = [];
+//   for (let i of m) {
+//     res.push(i);
+//     if (res.includes(i)) {
+//     }
+//   }
+//   for (let j of n) {
+//     if (res.includes(j)) {
+//       console.log(j);
+//       res1.push(j);
+//     }
+//   }
+//   //   return res;
+// }
+// console.log(merga(a, b));
+// ------------------------------------------------
+// let val = [2, 4, 1, 3, 5];
+// const mergeSortFun = (arr) => {
+//   let sortarr = [];
+//   let secarr = [...val];
+//   for (let i of arr) {
+//     smallvalue = secarr[0];
+//     for (let j of secarr) {
+//       if (smallvalue > j) {
+//         smallvalue = j;
+//       }
+//     }
+//     sortarr.push(smallvalue);
+//     secarr.splice(secarr.indexOf(smallvalue), 1);
+//   }
+//   console.log(sortarr);
+// };
+// mergeSortFun(val);
+// --------------------------------------------------------
+// let a = [1, 2, 5, 3, 7];
+// let b = [2, 4, 7, 8, 9, 3];
+// function intersection(a, b) {
+//   let res = [];
+//   for (let i of a) {
+//     if (b.includes(i)) {
+//       res.push(i);
+//     }
+//   }
+//   return res;
+// }
+// console.log(intersection(a, b));
+// ---------------------------------------------------------------
+CDATASection;
