@@ -975,3 +975,36 @@
 //   return count;
 // }
 // console.log(vowlels("javascript is amazing"));
+// ---------------------------------------------------
+// let str = "hello chan good morning";
+// function Occurrence(o) {
+//   let Object = {};
+//   for (let i of o) {
+//     Object[i] = (Object[i] || 0) + 1;
+//   }
+
+//   console.log(Object);
+// }
+// Occurrence(str);
+// -----------------------------------------------------
+// let v1 = "listen";
+// let v2 = "silent";
+// const anagaran = (a, b) => {
+//   let r1 = [];
+//   let r2 = [];
+//   for (let i of a) {
+//     if (!r1.includes(i)) {
+//       r1.push(i);
+//     }
+//   }
+//   for (let j of b) {
+//     if (!r2.includes(j)) {
+//       r2.push(j);
+//     }
+//   }
+//   r1.sort();
+//   r2.sort();
+//   return r1.join() === r2.join();
+// };
+// console.log(anagaran(v1, v2));
+// ----------------------------------------------------
